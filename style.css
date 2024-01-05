@@ -133,10 +133,21 @@ main h1 {
 
   aspect-ratio: 16/9; /* PROPORÇÃO da img*/
   object-fit: cover;
+
+  /* TRANSITIONS
+  transition-property: transform, filter;  Define em qual propriedade aplicaremos a transição! "all" define q todas propriedades receberão a transição.
+  transition-duration: 300ms;  Tempo da transição 
+  transition-delay: 0;  Tempo p/ iniciar a transição 
+  transition-timing-function: ease-out;  relação entre tempo x velocidade da transição
+  */
+
+  /* OU TRANSITIONS no shorthand: */
+  transition: all 300ms ease-out;
 }
 
 .item img:hover {
   filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+  transform: scale(1.1) rotate(-2deg);
 }
 
 .details {
