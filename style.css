@@ -11,4 +11,27 @@
     font-size: 62.5%;
 }
 
+body {
+    font-size: 1.6rem;
+    background: white;
+}
 
+#app > * {
+    border: 1px solid red;
+}
+
+#app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content; /* header e footer crescem com o máx conteúdo inserido. Main será tudo q sobrar! */
+    height: 100vh;
+}
+
+.container {
+    padding: 1.6rem 3.2rem;
+    width: min(112rem, 100%); /* max-width do conteúdo até 1120px */
+    margin: 0 auto;
+}
+
+main {
+    overflow-y: scroll; /* scroll somente no main! */
+}
