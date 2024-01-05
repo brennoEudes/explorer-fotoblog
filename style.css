@@ -104,6 +104,32 @@ ul li.active {
   border-radius: 50%; /* Quando temos img quadradas, arrendonda corretamente */
 }
 
+
+/* GALLERY */
+main h1 {
+    font-size: 2.4rem;
+
+    padding-top: 1.6rem;
+}
+
+.gallery {
+    margin-top: 3.2rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+    
+}
+
+.item img {
+    width: 100%;
+
+    aspect-ratio: 16/9; /* PROPORÇÃO da img*/
+    object-fit: cover;
+}
+
+
+/* FOOTER */
 footer p {
   text-align: center;
   font-size: 1.6rem;
