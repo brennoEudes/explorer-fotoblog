@@ -23,7 +23,17 @@
             <li>Home</li>
             <li class="active">Galeria</li>
           </ul>
-          <form action="">Search</form>
+          <form>
+            <div class="input-wrapper">
+              <label for="search">Pesquise por imagens e coleções</label>
+              <!--ACESSIBILIDADE: precisamos colocar o txt pois o placeholder não é lido por leitores de tela-->
+              <input
+                id="search"
+                type="text"
+                placeholder="Pesquise por imagens e coleções"
+              />
+            </div>
+          </form>
           <img
             class="avatar"
             src="https://randomuser.me/api/portraits/women/8.jpg"
