@@ -44,3 +44,40 @@ main {
   overflow-y: scroll; /* scroll somente no main! */
   background-color: var(--color-base-gray-100);
 }
+
+header, nav, nav ul {
+    display: flex;
+    align-items: center;
+    gap: 7.2rem;
+
+    font-weight: 700;
+}
+
+header form {
+    flex-wrap: 1; /* Preenche todo o espaço disponível pra ele */
+}
+
+nav ul {
+    list-style: none;
+
+    font-size: 1.8rem;
+    color: var(--color-base-gray-300);
+}
+
+ul li.active {
+    color: var(--color-base-gray-900);
+}
+
+.avatar {
+    width: 4.2rem;
+    height: 4.2rem;
+
+    object-fit: cover; /* Cobre todo o espaço diponível com a img */
+    border-radius: 50%; /* Quando temos img quadradas, arrendonda corretamente */
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
