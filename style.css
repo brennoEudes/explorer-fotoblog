@@ -59,7 +59,7 @@ header {
 }
 
 header form {
-  flex-wrap: 1; /* Preenche todo o espaço disponível pra ele */
+  flex: 1; /* Preenche todo o espaço disponível pra ele */
 }
 
 nav ul {
