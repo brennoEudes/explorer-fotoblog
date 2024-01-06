@@ -11,7 +11,7 @@
   font-size: 62.5%;
   font-family: "Mulish", sans-serif;
 
-  --hue: 270; /* Variável que controla toda a cor das fontes do site! */
+  --hue: 240; /* Variável que controla toda a cor das fontes do site! */
   --color-base-white: hsl(0, 0%, 100%); /* Propriedades alteradas de hexidecimal p/ HSL */
   --color-base-gray-100: hsl(0, 0%, 96%);
   --color-base-gray-300: hsl(var(--hue), 60%, 58%);
@@ -26,9 +26,9 @@ body {
   color: var(--color-base-gray-900);
 }
 
-#app > * {
+/* #app > * {
   border: 1px solid red;
-}
+} */
 
 #app {
   display: grid;
