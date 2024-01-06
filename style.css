@@ -52,6 +52,11 @@ nav ul {
   font-weight: 700;
 }
 
+header {
+  --startY: -100%; /* Chama a variável da animação indicando o início em relação ao eixo y*/
+  animation: move 1s;
+}
+
 header form {
   flex-wrap: 1; /* Preenche todo o espaço disponível pra ele */
 }
@@ -126,6 +131,9 @@ main h1 {
   border-radius: 0.8rem;
 
   overflow: hidden; /* Ajusta a img c/ borda da caixa*/
+
+  --delay: .4s;
+  animation: appear 2s var(--delay) backwards; /* backwards puxa as definições do início da animação para o item. Como há o delay, as img já comecam do ponto menor e depois aumentam*/
 }
 
 .item img {
@@ -173,8 +181,37 @@ main h1 {
 }
 
 /* FOOTER */
+footer {
+  --startY: 100%; /* Chama a variável da animação indicando o início em relação ao eixo y*/
+  animation: move 1s;
+}
+
 footer p {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+/* ANIMATIONS */
+
+@keyframes move {
+  from {
+    transform: translateY(
+      var(--startY)
+    ); /* Cria uma varíavel p/ animação referente ao eixo y */
+  }
+
+  to {
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
 }
